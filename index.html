@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="getData()">조회</button>
+<script>
+    function getData(){
+        fetch("http://localhost:3000/posts").then(response =>response.json())
+            .then(json => console.log(json))
+    }
+</script>
+</body>
+</html>
